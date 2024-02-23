@@ -3,36 +3,48 @@ import { Button } from '@/components/ui/button'
 import { ArrowDownRightFromCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import gaara from '@/public/landing-page-images/gaara.jpg'
+import pain from '@/public/landing-page-images/pain.jpg'
+import naruto from '@/public/landing-page-images/naruto.jpg'
+import hinata from '@/public/landing-page-images/hinata.jpg'
+import kakashi from '@/public/landing-page-images/kakashi.jpg'
+import itachi from '@/public/landing-page-images/itachi.jpg'
 
 export default function Home() {
   // connectToMongo()
   return (
     <>
-      <main className='relative flex gap-1 bg-primary/95'>
-        <div className='h-[88vh] w-1/3 flex flex-col gap-1'>
+      <main className='relative flex'>
+        <div className='h-[88vh] w-1/3 flex flex-col'>
           <div className='relative h-[40%]'>
-            <Image src={'/landing-page-images/gaara.jpg'} alt='Gaara' fill />
+            <Image src={gaara} alt='Gaara' fill priority placeholder='blur' />
           </div>
           <div className='relative h-[60%]'>
-            <Image src={'/landing-page-images/pain.jpg'} alt='Gaara' fill />
+            <Image src={pain} alt='Pain' fill priority placeholder='blur' />
           </div>
         </div>
 
-        <div className='h-[88vh] w-1/3 flex flex-col gap-1'>
+        <div className='h-[88vh] w-1/3 flex flex-col'>
           <div className='relative h-[50%]'>
-            <Image src={'/landing-page-images/naruto.jpg'} alt='Gaara' fill />
+            <Image src={naruto} alt='Naruto' fill priority placeholder='blur' />
           </div>
           <div className='relative h-[50%]'>
-            <Image src={'/landing-page-images/hinata.jpg'} alt='Gaara' fill />
+            <Image src={hinata} alt='Hinata' fill priority placeholder='blur' />
           </div>
         </div>
 
-        <div className='h-[88vh] w-1/3 flex flex-col gap-1'>
+        <div className='h-[88vh] w-1/3 flex flex-col'>
           <div className='relative h-[60%]'>
-            <Image src={'/landing-page-images/kakashi.jpg'} alt='Gaara' fill />
+            <Image
+              src={kakashi}
+              alt='Kakashi'
+              fill
+              priority
+              placeholder='blur'
+            />
           </div>
           <div className='relative h-[40%]'>
-            <Image src={'/landing-page-images/itachi.jpg'} alt='Gaara' fill />
+            <Image src={itachi} alt='Itachi' fill priority placeholder='blur' />
           </div>
         </div>
 

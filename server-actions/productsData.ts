@@ -1,7 +1,10 @@
 'use server'
+import connectToMongo from '@/db/db'
 import { Product } from '@/models/Product'
 
 export const getAllProducts = async () => {
+  await connectToMongo()
+
   try {
     const allProducts = await Product.find({})
     if (allProducts.length > 0) {
