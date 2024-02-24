@@ -6,8 +6,8 @@ import SecondaryLinks from './SecondaryLinks'
 
 const NavList = () => {
   const user: { username?: string; role?: string } = {
-    username: 'User',
-    role: 'admin',
+    // username: 'User',
+    // role: 'admin',
   }
 
   return (
