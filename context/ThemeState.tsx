@@ -1,5 +1,6 @@
 'use client'
 
+import { Theme, ThemeContextType } from '@/types/dataTypes'
 import React, {
   ReactNode,
   createContext,
@@ -8,14 +9,7 @@ import React, {
   useState,
 } from 'react'
 
-type Theme = 'light' | 'dark'
-
-type ThemeContext = {
-  theme: Theme
-  setTheme: React.Dispatch<React.SetStateAction<Theme>>
-}
-
-const ThemeContext = createContext<ThemeContext | null>(null)
+const ThemeContext = createContext<ThemeContextType>(null)
 
 const ThemeState = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>('light')

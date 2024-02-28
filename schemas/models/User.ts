@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 const UserSchema = new mongoose.Schema({
-  username: {
+  name: {
     type: String,
     required: true,
   },
@@ -15,40 +15,18 @@ const UserSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: String,
-    required: true,
   },
   img: {
     type: String,
   },
   address: {
-    house: {
-      type: String,
-      required: true,
-    },
-    lane: {
-      type: String,
-      required: true,
-    },
-    landmark: {
-      type: String,
-      required: true,
-    },
-    city: {
-      type: String,
-      required: true,
-    },
-    state: {
-      type: String,
-      required: true,
-    },
-    pincode: {
-      type: Number,
-      required: true,
-    },
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Address',
   },
   cart: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Cart',
+    required: true,
   },
   wishlist: [
     {

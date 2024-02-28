@@ -1,14 +1,12 @@
-import Form from '@/components/AuthForms/Form'
-import FormPageBg from '@/components/AuthForms/FormPageBg'
+import LoginForm from '@/components/AuthForms/LoginForm'
+import FormPageBg from '@/components/Backgrounds/FormPageBg'
 import FormCard from '@/components/Cards/FormCard'
 import FormMaxWidthWrapper from '@/components/FormMaxWidthWrapper'
 import MaxHeightWrapper from '@/components/MaxHeightWrapper'
-import { registerUser } from '@/server-actions/auth'
-import Image from 'next/image'
 
-const Register = () => {
+const Login = () => {
   return (
-    <div>
+    <>
       <MaxHeightWrapper className='relative flex justify-center items-center'>
         <FormPageBg />
 
@@ -16,27 +14,21 @@ const Register = () => {
           <FormCard
             title={
               <>
-                Become a <b className='text-primary'>Leaf Shinobi</b>
+                Welcome <b className='text-primary'>Leaf Shinobi</b>
               </>
             }
             description={
               <>
-                Carry the <b>Will Of Fire!</b>
+                Start <b>Your Mission Now!</b>
               </>
             }
           >
-            <Form
-              handler={registerUser}
-              username
-              email
-              password
-              confirmPassword
-            />
+            <LoginForm />
           </FormCard>
         </FormMaxWidthWrapper>
       </MaxHeightWrapper>
-    </div>
+    </>
   )
 }
 
-export default Register
+export default Login

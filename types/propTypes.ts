@@ -1,9 +1,7 @@
-import { AuthFunction } from './functionTypes'
+export type FormErrorProps = {
+  message?: string
+}
 
-export type AuthForm = {
-  handler: AuthFunction
-  username?: boolean
-  email?: boolean
-  password?: boolean
-  confirmPassword?: boolean
+export type FormSuccessProps = {
+  message?: string
 }

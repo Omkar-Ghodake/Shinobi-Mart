@@ -59,6 +59,13 @@
 }
 
 @layer components {
+  .img-drop-shadow {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  }
+
+  .img-drop-shadow-hover {
+    filter: drop-shadow(0.55rem 0.55rem 0.4rem rgba(0, 0, 0, 0.5));
+  }
 }
 
 .box-shadow-modal {

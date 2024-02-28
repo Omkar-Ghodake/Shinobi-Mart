@@ -11,8 +11,7 @@ const FormPageBg = () => {
           src={naruto_jiraya_minato_kakashi}
           alt=''
           fill
-          objectFit='cover'
-          className='opacity-30 absolute inset-0'
+          className='opacity-30 absolute inset-0 object-cover'
           placeholder='blur'
           priority
         />

@@ -1,4 +1,4 @@
-import { User } from '@/models/User'
+import { User } from '@/schemas/models/User'
 import { ObjectId } from 'mongoose'
 
 const getTheme = async (id: ObjectId) => {

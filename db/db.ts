@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 
 let connectionStatus = 0
+const mongoUri: string = process.env.MONGO_URI || ''
 
 const connectToMongo = async () => {
   try {
@@ -8,7 +9,7 @@ const connectToMongo = async () => {
       console.log('Using Existing Connection!')
       return
     }
-    const conn = await mongoose.connect(process.env.MONGO_URI || '')
+    const conn = await mongoose.connect(mongoUri)
     connectionStatus = conn.connections[0].readyState
     if (connectionStatus) {
       console.log('Connected to Mongo!')

@@ -1,6 +1,6 @@
 'use server'
 import connectToMongo from '@/db/db'
-import { Product } from '@/models/Product'
+import { Product } from '@/schemas/models/Product'
 
 export const getAllProducts = async () => {
   await connectToMongo()

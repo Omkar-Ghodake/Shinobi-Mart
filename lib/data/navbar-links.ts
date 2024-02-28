@@ -71,11 +71,11 @@ const defaultLinks: DefaultNavLinks[] = [
 const secondaryLinks: DefaultNavLinks[] = [
   {
     item: 'Login',
-    link: '/login',
+    link: '/auth/login',
   },
   {
     item: 'Register',
-    link: '/register',
+    link: '/auth/register',
   },
 ]
 

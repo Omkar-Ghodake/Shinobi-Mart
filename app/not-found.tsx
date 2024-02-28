@@ -34,7 +34,7 @@ const NotFound = () => {
             alt='Kunai'
             width={70}
             height={30}
-            className='hover:scale-110 duration-300 ease-in-out'
+            className='hover:scale-110 duration-300 ease-in-out img-drop-shadow hover:img-drop-shadow-hover'
           />
         </Link>
       </div>
